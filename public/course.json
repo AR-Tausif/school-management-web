@@ -1,0 +1,167 @@
+{
+    "elements": [
+      {
+        "id": "1",
+        "name": "Introduction to Programming",
+        "slug": "intro-programming",
+        "description": "This course introduces programming concepts...",
+        "photoUrl": "https://img-c.udemycdn.com/course/240x135/2776760_f176_10.jpg",
+        "startDate": "2022-01-01",
+        "endDate": "2022-03-31",
+        "language": "en",
+        "partnerIds": [
+          "university123"
+        ],
+        "domainTypes": [
+          "computer-science"
+        ],
+        "categories": [
+          "programming",
+          "computing",
+          "technology"
+        ],
+        "instructors": [
+          {
+            "fullName": "John Doe",
+            "photoUrl": "https://demoapus1.com/skillup/wp-content/uploads//learn-press-profile/3/d354837ccfff1c20bfc3ed36e793f981.jpeg"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Data Science Fundamentals",
+        "slug": "data-science-fundamentals",
+        "description": "This course teaches the basics of data science...",
+        "photoUrl": "https://img-c.udemycdn.com/course/240x135/950390_270f_3.jpg",
+        "startDate": "2022-02-01",
+        "endDate": "2022-04-30",
+        "language": "en",
+        "partnerIds": [
+          "university456"
+        ],
+        "domainTypes": [
+          "data-science"
+        ],
+        "categories": [
+          "data-science",
+          "statistics",
+          "machine-learning"
+        ],
+        "instructors": [
+          {
+            "fullName": "Jane Smith",
+            "photoUrl": "https://demoapus1.com/skillup/wp-content/uploads//learn-press-profile/7/daf22c2017d669b6d2084b606d45ca65.jpeg"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Data Science Fundamentals",
+        "slug": "data-science-fundamentals",
+        "description": "This course teaches the basics of data science...",
+        "photoUrl": "https://img-c.udemycdn.com/course/240x135/1565838_e54e_16.jpg",
+        "startDate": "2022-02-01",
+        "endDate": "2022-04-30",
+        "language": "en",
+        "partnerIds": [
+          "university456"
+        ],
+        "domainTypes": [
+          "data-science"
+        ],
+        "categories": [
+          "data-science",
+          "statistics",
+          "machine-learning"
+        ],
+        "instructors": [
+          {
+            "fullName": "Jane Smith",
+            "photoUrl": "https://demoapus1.com/skillup/wp-content/uploads//learn-press-profile/5/163bc32b5bd142be912f4d04a98845f4.jpeg"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Data Science Fundamentals",
+        "slug": "data-science-fundamentals",
+        "description": "This course teaches the basics of data science...",
+        "photoUrl": "https://img-c.udemycdn.com/course/240x135/1565838_e54e_16.jpg",
+        "startDate": "2022-02-01",
+        "endDate": "2022-04-30",
+        "language": "en",
+        "partnerIds": [
+          "university456"
+        ],
+        "domainTypes": [
+          "data-science"
+        ],
+        "categories": [
+          "data-science",
+          "statistics",
+          "machine-learning"
+        ],
+        "instructors": [
+          {
+            "fullName": "Jane Smith",
+            "photoUrl": "https://demoapus1.com/skillup/wp-content/uploads//learn-press-profile/5/163bc32b5bd142be912f4d04a98845f4.jpeg"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "Data Science Fundamentals",
+        "slug": "data-science-fundamentals",
+        "description": "This course teaches the basics of data science...",
+        "photoUrl": "https://img-c.udemycdn.com/course/240x135/1565838_e54e_16.jpg",
+        "startDate": "2022-02-01",
+        "endDate": "2022-04-30",
+        "language": "en",
+        "partnerIds": [
+          "university456"
+        ],
+        "domainTypes": [
+          "data-science"
+        ],
+        "categories": [
+          "data-science",
+          "statistics",
+          "machine-learning"
+        ],
+        "instructors": [
+          {
+            "fullName": "Jane Smith",
+            "photoUrl": "https://demoapus1.com/skillup/wp-content/uploads//learn-press-profile/5/163bc32b5bd142be912f4d04a98845f4.jpeg"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "Data Science Fundamentals",
+        "slug": "data-science-fundamentals",
+        "description": "This course teaches the basics of data science...",
+        "photoUrl": "https://img-c.udemycdn.com/course/240x135/1565838_e54e_16.jpg",
+        "startDate": "2022-02-01",
+        "endDate": "2022-04-30",
+        "language": "en",
+        "partnerIds": [
+          "university456"
+        ],
+        "domainTypes": [
+          "data-science"
+        ],
+        "categories": [
+          "data-science",
+          "statistics",
+          "machine-learning"
+        ],
+        "instructors": [
+          {
+            "fullName": "Jane Smith",
+            "photoUrl": "https://demoapus1.com/skillup/wp-content/uploads//learn-press-profile/5/163bc32b5bd142be912f4d04a98845f4.jpeg"
+          }
+        ]
+      }
+    ]
+  }
+  

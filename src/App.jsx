@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header/Header';
 import LogoHeaderOne from './components/layout/LogoHeaderOne';
 import FeaturedCourse from './components/featuredCoures/FeaturedCourse';
+import Categories from './components/categories/Categories';
+import Membership from './components/membership/Membership';
 
 const App = () => {
   return (
@@ -13,11 +15,13 @@ const App = () => {
       <NavigationBar></NavigationBar>
       <div id='header__main'>
         <Header></Header>
+        <LogoHeaderOne></LogoHeaderOne>
       </div>
     </header>
-    <LogoHeaderOne></LogoHeaderOne>
     <main>
       <FeaturedCourse></FeaturedCourse>
+      <Categories></Categories>
+      <Membership></Membership>
     </main>
     </>
   );
