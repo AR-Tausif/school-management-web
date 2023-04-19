@@ -5,7 +5,7 @@ import IndividualIntervalsExample from '../schem/Review';
 
 const ReviewPage = () => {
     return (
-        <div className="py-5">
+        <div className="py-5 bg-light">
             <HeadTitle title="Our Students" dText="Reviews"/>
             <Container>
                 <IndividualIntervalsExample/>

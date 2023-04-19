@@ -1,0 +1,15 @@
+.btn__primary{
+    background-color: #03b97c !important;
+    border: 2px solid #03b97c;
+    color: #fff !important;
+}
+
+.btn__primary:hover{
+    border: 2px solid #03b97c !important;
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.bg-deepsuccess{
+    color: #02875a;
+}

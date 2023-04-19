@@ -6,7 +6,7 @@ import { Container } from 'react-bootstrap';
 const FeaturedCourse = ({courses, title, dText}) => {
 
     return (
-        <div className="bg-light py-5 ">
+        <div className="bg-white py-5 ">
             <Container>
             <div className="py-5">
                 <HeadTitle title={title} dText={dText}></HeadTitle>
