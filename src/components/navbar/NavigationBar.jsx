@@ -7,9 +7,11 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const NavigationBar =()=> {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="" expand="lg">
       <Container>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#">
+          <img src="https://i.ibb.co/Phgcstt/kisspng-logo-information-technology-vector-graphics-royalt-5ccb565cc91a76-3238063115568297888237-rem.png" style={{width: '15%'}} />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

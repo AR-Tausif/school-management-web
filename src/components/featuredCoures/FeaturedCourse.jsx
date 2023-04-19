@@ -1,20 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import HeadTitle from '../utilities/HeadTitle';
 import Featured from '../schem/Featured';
 import { Container } from 'react-bootstrap';
 
-const FeaturedCourse = () => {
-    const [courses, setCourses] = useState([])
-    useEffect(()=>{
-        fetch('public/course.json')
-        .then(res=>res.json())
-        .then(data=>setCourses(data.elements))
-    },[])
+const FeaturedCourse = ({courses, title, dText}) => {
+
     return (
         <div className="bg-light py-5 ">
             <Container>
             <div className="py-5">
-                <HeadTitle title="Explore Featured" dText="Courses"></HeadTitle>
+                <HeadTitle title={title} dText={dText}></HeadTitle>
                 <div className="row mt-5">
                     {
                         courses && 
