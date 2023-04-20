@@ -7,9 +7,9 @@ import "./categories.css"
 
 
 const Categories = () => {
-    const [data, setData] = useState()
+    const [data, setData] = useState([])
     useEffect(()=>{
-        fetch("public/categoriData.json")
+        fetch("https://raw.githubusercontent.com/AR-Tausif/needed-images/main/category.json")
         .then(res=>res.json())
         .then(data=>setData(data))
     },[])
@@ -20,7 +20,7 @@ const Categories = () => {
             <HeadTitle title="Explore Featured" dText="Categories"></HeadTitle>
             <div className="row row-cols-5 justify-content-center my-5">
                     {
-                        data && 
+                        data &&
                         data.map(dt => <Category key={dt.id} cData={dt}></Category>)
                     }
             </div>

@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useLoaderData, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
 
-import './featured.css'
-import { NavLink, useNavigate } from 'react-router-dom';
-
-const Featured = ({course}) => {
-    const navigate = useNavigate()
-
-    const handleNavigate =(id)=>{
-        navigate('/course-details')
-    }
-
+const CourseDetails = () => {
+    const location = useLocation()
+    console.log(location);
+    const loadData = useLoaderData();
+    const [data, setData] = useState(loadData);
+    const course = loadData.find(datas => datas.id === 1);
+    console.log(course);
     return (
-        <div className="col col-md-4 mt-5">
+        <div className="container">
+             <div className="col col-md-4 mt-5">
             <Card className="p-2">
                 <Card.Img variant="top" src={course.courseImg} className="rounded" id="course__image" />
                 <Card.Body>
@@ -21,7 +21,7 @@ const Featured = ({course}) => {
                     <p>100+ Enrolled</p>
                     </div>
                     <NavLink to="/course-details" className="nav-link">
-                        <Card.Title style={{fontSize: '18px'}} onClick={()=>handleNavigate(course.id)}>{course.courseTitle}</Card.Title>
+                        <Card.Title style={{fontSize: '18px'}}>{course.courseTitle}</Card.Title>
                     </NavLink>
                 <Card.Text style={{fontSize: '14px'}}>
                     {course.description && course.description.slice(1, 60)} ...
@@ -43,7 +43,8 @@ const Featured = ({course}) => {
                 </Card.Footer>
             </Card>
         </div>
+        </div>
     );
 };
 
-export default Featured;
+export default CourseDetails;

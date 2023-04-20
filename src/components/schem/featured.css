@@ -1,0 +1,4 @@
+#course__image:hover{
+    transition: all 1s ease-in;
+    transform: scale(1.05);
+}

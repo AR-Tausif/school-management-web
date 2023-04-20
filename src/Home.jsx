@@ -20,7 +20,6 @@ const Home = () => {
             const newsData = loadersData.slice(0, 3)
             return setNews(newsData)
     },[])
-    console.log(news);
     return (
         <>
             <header>

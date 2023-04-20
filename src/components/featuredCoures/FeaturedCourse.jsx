@@ -12,8 +12,7 @@ const FeaturedCourse = ({courses, title, dText}) => {
                 <HeadTitle title={title} dText={dText}></HeadTitle>
                 <div className="row mt-5">
                     {
-                        courses && 
-                        courses.map(course=> <Featured key={course.id} course={course}></Featured>)
+                        courses?.map(course=> <Featured key={course.id} course={course}></Featured>)
                     }
                 </div>
             </div>

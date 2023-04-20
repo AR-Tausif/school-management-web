@@ -7,6 +7,7 @@ import Home from './Home'
 import Course from './Course'
 import About from './About'
 import Categori from './Categori'
+import CourseDetails from './CourseDetails'
 
 const router= createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router= createBrowserRouter([
       {
         path: '/about',
         element: <About />
+      },
+      {
+        path: '/course-details',
+        element: <CourseDetails/>,
+        loader: async() => fetch('public/course.json')
       }
     ]
   }

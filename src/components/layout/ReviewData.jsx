@@ -8,7 +8,7 @@ const ReviewData = () => {
             <div className="fw-semibold" style={{fontSize: '12px', lineHeight: '4px'}}>
                 <p className="fs-5 fw-semibold">Sawrab Developer</p>
                 <p>Linkedin Leader</p>
-                <p className="bg-warning py-1 rounded text-center text-white" style={{width: '77px'}}> <i class="bi bi-star-half"></i> 5stars</p>
+                <p className="bg-warning py-1 rounded text-center text-white" style={{width: '77px'}}> <i className="bi bi-star-half"></i> 5stars</p>
             </div>
             </div>
             <p style={{fontSize: '12px'}}> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam error dolores velit dolorum labore facere hic, qui, blanditiis dolorem iusto vel aliquid odit nam iste! Reprehenderit nesciunt numquam amet pariatur. </p>
