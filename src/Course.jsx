@@ -5,20 +5,29 @@ import HeadTitle from './components/utilities/HeadTitle';
 import Featured from './components/schem/Featured';
 
 const Course = () => {
-    const loadersData = useLoaderData();
-    const [courses, setCourses] = useState(loadersData)
-
+    // const loadersData = useLoaderData();
+    const [courses, setCourses] = useState([])
+    console.log(courses);
+    const [newss, setNewss] = useState(null)
+    useEffect(()=>{
+        fetch("https://raw.githubusercontent.com/AR-Tausif/needed-images/main/coures.json")
+        .then(res=>res.json())
+        .then(data=>setCourses(data))
+        
+    },[])
+    useEffect(()=>setNewss(courses),[courses])
+    console.log(newss,'55');
 // useEffect(()=> setCourses(loadersData) , [])
 //     console.log(courses);
     const handleSearch =(data)=>{
-        const filteredCourse = loadersData.filter(course => course.courseCategory === data);
-        setCourses(filteredCourse)
+        const filteredCourse = courses?.filter(course => course.courseCategory === data);
+        setNewss(filteredCourse)
     }
 
     const handleOnChange =(e)=>{
         const {value} = e.target;
-        const filteredCourse = loadersData.filter(course => course.courseCategory === value);
-        setCourses(filteredCourse);
+        const filteredCourse = courses.filter(course => course.courseCategory === value);
+        setNewss(filteredCourse);
     }
 
     const searchOnchange =(e)=>{
@@ -31,7 +40,7 @@ const Course = () => {
             handleSearch("Development")
         }
         else{
-            setCourses(loadersData)
+            setCourses(courses)
         }
     }
 
@@ -62,18 +71,18 @@ const Course = () => {
                         </div>
 
                         <div className="mt-3">
-                            <input type="checkbox" value="" onChange={()=>setCourses(loadersData)} /> <span> All Courses </span>
+                            <input type="checkbox" value="" onChange={()=>setCourses(courses)} /> <span> All Courses </span>
                         </div>
                     </div>
                 </div>
                 <div className="col-9">
                     <div className="bg-light py-3 px-5">
-                        <h4>{courses.length} Courses Found</h4>
+                        <h4>{newss?.length} Courses Found</h4>
                     </div>
                     <div className="row">
                     {
-                        courses &&
-                        courses.map(course => <Featured key={course.id} course={course}></Featured> )
+                        newss &&
+                        newss.map(course => <Featured key={course.id} course={course}></Featured> )
                     }
                     </div>
                 </div>

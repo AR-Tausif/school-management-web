@@ -8,18 +8,24 @@ import ReviewPage from './components/reviewPage/ReviewPage';
 import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {
-    const loadersData = useLoaderData();
-    const [courses, setCourses] = useState([])
-    const [news, setNews] = useState([])
+    // const loadersData = useLoaderData();
+    // const [courses, setCourses] = useState([])
+    // const [news, setNews] = useState([])
+    const [newss, setNewss] = useState([])
 
+    console.log(newss);
+    // useEffect(()=>{
+    //     setCourses(loadersData)
+        
+    // },[])
     useEffect(()=>{
-        setCourses(loadersData)
+        fetch("https://raw.githubusercontent.com/AR-Tausif/needed-images/main/coures.json")
+        .then(res=>res.json())
+        .then(data=>setNewss(data))
         
     },[])
-    useEffect(()=>{
-            const newsData = loadersData.slice(0, 3)
-            return setNews(newsData)
-    },[])
+
+    newss.splice(6)
     return (
         <>
             <header>
@@ -29,11 +35,11 @@ const Home = () => {
             </div>
             </header>
             <main>
-                <FeaturedCourse courses={courses} title="Explore Featured" dText="Courses"></FeaturedCourse>
+                <FeaturedCourse courses={newss} title="Explore Featured" dText="Courses"></FeaturedCourse>
                 <Categories></Categories>
                 <Membership />
                 <ReviewPage />
-                <FeaturedCourse courses={news} title="Latest News &" dText="Articles"></FeaturedCourse>
+                <FeaturedCourse courses={newss} title="Latest News &" dText="Articles"></FeaturedCourse>
             </main>
         </>
     );

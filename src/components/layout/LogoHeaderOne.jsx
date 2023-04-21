@@ -12,7 +12,7 @@ const LogoHeaderOne = () => {
         },[])
     return (
       <div className="m-auto container bg-none position-relative">
-        <div className="container px-5 py-4 d-flex bg-light justify-content-between rounded shadow-lg" style={{position: 'relative', bottom: '-180px'}}>
+        <div className="container px-5 py-4 d-flex bg-light justify-content-between rounded shadow-lg" style={{position: 'absolute', bottom: '-200px'}}>
                 <div>
                     <h2 className="fs-5 fw-semibold text-end">All In One <br /> Place</h2>
                 </div>
